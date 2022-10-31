@@ -1,2 +1,2 @@
 msa:
-  test: msa-dev config test change refresh
+  test: member-server dev
