@@ -1,2 +1,5 @@
+server:
+  port: 0
+
 msa:
   test: member-server dev
