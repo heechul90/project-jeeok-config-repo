@@ -1,0 +1,5 @@
+server:
+  port: 0
+
+msa:
+  test: jeeokshop-order-server prod
