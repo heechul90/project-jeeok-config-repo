@@ -8,6 +8,32 @@ spring:
     password: jeeok_pass
     driver-class-name: org.mariadb.jdbc.Driver
 
+#actuator config
+management:
+  endpoints:
+    web:
+      exposure:
+        include: refresh
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+    fetch-registry: true
+    register-with-eureka: true
+#  instance:
+#    instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
+
+logging:
+  level:
+    root: info
+    org.hibernate.SQL: debug
+
+decorator:
+  datasource:
+    p6spy:
+      enable-logging: true
+
 token:
   access-expired-time: 3600000
   refresh-expired-time: 604800000
