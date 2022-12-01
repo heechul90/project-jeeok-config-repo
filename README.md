@@ -1,1 +1,1 @@
-# study-msa-config
+# jeeok-config
